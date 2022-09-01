@@ -157,6 +157,7 @@ public class ServiceDiscovery {
             return serverMap.get(service);
         }
         //找不到服务，返回空的服务区列表
+        // TODO 找不到去刷新serverMap，然后在找。
         return new ArrayList<>();
     }
 
