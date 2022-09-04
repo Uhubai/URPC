@@ -3,22 +3,25 @@ package com.uhubai.server.config;
 
 import com.uhubai.server.netty.NettyServer;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
-@Data
+@Setter
+@Getter
 @Configuration
 @ConfigurationProperties(prefix = "rpc.provider.server")
 public class ServerConfig implements InitializingBean {
 
     private String id;
 
-    private String ip = "127.0.0.1";
+    private String ip;
 
-    private int port = 7800;
+    private int port;
 
-    private int weight = 100;
+    private int weight;
 
     @Override
     public void afterPropertiesSet() {

@@ -2,7 +2,6 @@ package com.uhubai.client.config;
 
 import com.uhubai.client.anno.URpcReference;
 import com.uhubai.client.proxy.impl.ProxyManager;
-import com.uhubai.client.register.ServiceDiscovery;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;

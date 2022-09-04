@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.uhubai.client.config.BeanPostProcess,\
+  com.uhubai.client.config.ClientConfig,\
+  com.uhubai.client.register.RegistryConfig

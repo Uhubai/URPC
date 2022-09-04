@@ -9,19 +9,23 @@ import com.uhubai.client.proxy.impl.ProxyManager;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.InitializingBean;
-import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 
 
 @Slf4j
 @Data
 @Configuration
-@ConfigurationProperties(prefix = "rpc.consumer.client")
 public class ClientConfig implements InitializingBean {
 
+    @Value("${rpc.consumer.client.id}")
     private String id;
-    private String loadBalance = "hash";
-    private String proxy = "jdk";
+    @Value("${rpc.consumer.client.loadBalance}")
+    // = "hash"
+    private String loadBalance;
+    @Value("${rpc.consumer.client.proxy}")
+    //="jdk"
+    private String proxy;
 
     @Override
     public void afterPropertiesSet() {

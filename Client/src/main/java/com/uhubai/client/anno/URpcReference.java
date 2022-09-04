@@ -1,6 +1,5 @@
 package com.uhubai.client.anno;
 
-
 import java.lang.annotation.*;
 
 @Documented

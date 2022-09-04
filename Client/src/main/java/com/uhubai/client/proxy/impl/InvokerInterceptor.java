@@ -21,6 +21,7 @@ public class InvokerInterceptor extends InvokerHandler implements MethodIntercep
 
     @Override
     public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
+        log.info("执行CGlib代理--");
         return doInvoke(method, objects);
     }
 }

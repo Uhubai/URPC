@@ -17,6 +17,7 @@ public class InvokerInvocationHandler extends InvokerHandler implements Invocati
 
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+        log.info("执行JDK代理--");
         return doInvoke(method, args);
     }
 }

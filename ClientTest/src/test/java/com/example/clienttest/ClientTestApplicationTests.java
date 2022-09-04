@@ -1,20 +1,20 @@
-package com.uhubai.client;
+package com.example.clienttest;
 
-import com.uhubai.client.service.HelloService;
+
+import com.example.clienttest.controller.TestController;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ClientApplicationTests {
+class ClientTestApplicationTests {
 
     @Autowired
-    HelloService service;
+    TestController testController;
 
     @Test
     void contextLoads() {
-        //helloService.getSayHello().sayHello();
-        System.out.println(service.getSayHello().OKOK());
+        System.out.println(testController.test.test());
     }
 
 }

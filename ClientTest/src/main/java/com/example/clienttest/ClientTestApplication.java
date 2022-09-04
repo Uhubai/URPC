@@ -1,13 +1,13 @@
-package com.uhubai.server;
+package com.example.clienttest;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ServerApplication {
+public class ClientTestApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ServerApplication.class, args);
+        SpringApplication.run(ClientTestApplication.class, args);
     }
 
 }
