@@ -7,7 +7,7 @@ public interface Serializer {
 
     Byte getSerializeType();
 
-    byte[] serialize(Object object);
+    byte[] serialize(Object object) throws Exception;
 
-    <T> T deserialize(Class<T> clazz, byte[] bytes);
+    <T> T deserialize(Class<T> clazz, byte[] bytes) throws Exception;
 }
